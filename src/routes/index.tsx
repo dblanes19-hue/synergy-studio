@@ -59,25 +59,25 @@ function Index() {
         <Button asChild variant="portfolio" size="sm"><a href="#contacto">Hablemos <ArrowUpRight /></a></Button>
       </header>
 
-      <section id="inicio" className="relative flex min-h-[92svh] flex-col justify-center overflow-hidden px-5 pb-12 pt-28 md:px-10 lg:px-16">
+      <section id="inicio" className="relative flex min-h-[calc(100svh-2rem)] flex-col justify-center overflow-hidden px-5 pb-9 pt-24 md:min-h-[92svh] md:px-10 md:pb-12 md:pt-28 lg:px-16">
         <div className="mx-auto w-full max-w-[1440px]">
           <div className="mb-7 flex items-end justify-between border-b border-foreground/20 pb-3 text-[10px] font-semibold uppercase tracking-[0.2em] md:text-xs">
             <span>Diseñador gráfico · ASIR</span><span>Madrid · 2026</span>
           </div>
-          <p className="mb-2 text-sm font-medium text-primary md:text-lg">👋 ¡Hola! Soy David</p>
-          <h1 className="text-balance font-display text-[clamp(4rem,12vw,11rem)] leading-[0.78] text-primary">
+          <p className="mb-2 flex items-center gap-2 text-sm font-medium text-primary md:text-lg"><span className="size-2 rounded-full bg-secondary" />¡Hola! Soy David</p>
+          <h1 className="text-balance font-display text-[3.35rem] leading-[0.78] text-primary md:text-[clamp(4rem,12vw,11rem)]">
             Diseñador <span className="text-foreground">gráfico</span>
             <span className="relative mt-2 block pl-[10vw]">→ Sistemas<span className="absolute -right-1 -top-3 font-sans text-sm font-semibold uppercase tracking-widest text-secondary md:right-8 md:top-6">En evolución</span></span>
           </h1>
-          <div className="mt-7 grid items-end gap-8 md:grid-cols-[1fr_280px_1fr]">
+          <div className="mt-5 grid items-end gap-5 md:mt-7 md:grid-cols-[1fr_280px_1fr] md:gap-8">
             <div className="max-w-xs text-sm leading-relaxed md:pb-10"><p>Diseñador gráfico desde 2020.</p><p className="text-muted-foreground">6 años en agencias y estudios.</p></div>
-            <div className="relative mx-auto w-[210px] rotate-2 md:w-[280px]">
+            <div className="relative mx-auto w-[165px] rotate-2 md:w-[280px]">
               <div className="absolute -left-5 -top-5 z-10 flex size-12 items-center justify-center rounded-full bg-secondary text-secondary-foreground animate-float-soft"><Asterisk /></div>
               <img src={portrait} alt="Retrato editorial de David Blanes" width={1200} height={1504} fetchPriority="high" className="aspect-[4/5] w-full object-cover grayscale-[15%]" />
             </div>
-            <div className="md:pb-10 md:text-right"><p className="font-display text-2xl leading-tight">Creando experiencias visuales<br />técnicamente sólidas.</p></div>
+            <div className="text-center md:pb-10 md:text-right"><p className="font-display text-xl leading-tight md:text-2xl">Creando experiencias visuales<br />técnicamente sólidas.</p></div>
           </div>
-          <a href="#sobre-mi" className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary">Descubrir <ArrowDown className="size-4" /></a>
+          <a href="#sobre-mi" className="mt-4 hidden items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary md:inline-flex">Descubrir <ArrowDown className="size-4" /></a>
         </div>
       </section>
 
