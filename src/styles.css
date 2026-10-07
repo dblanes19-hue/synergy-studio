@@ -132,7 +132,7 @@
 
 @theme inline {
   --font-sans: "Tomato Grotesk", sans-serif;
-  --font-display: "Migra Extralight", serif;
+  --font-display: "Tomato Grotesk", serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
