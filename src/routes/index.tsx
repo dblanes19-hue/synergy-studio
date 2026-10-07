@@ -31,7 +31,7 @@ const skills = [
 ];
 
 const projects = [
-  { number: "01", category: "Diseño web · E-commerce", title: "Norte — Shopify Experience", image: projectShopify, description: "Una landing de comercio digital donde dirección de arte, interacción y conversión trabajan como un único sistema.", tools: "Figma · Shopify · Liquid" },
+  { number: "01", category: "Diseño web · Identidad visual", title: "Hazlo bello", image: projectShopify, description: "Una landing de una directora de arte donde interacción, diseño e identidad trabajan como un único sistema.", tools: "Figma · Webflow" },
   { number: "02", category: "Branding · Identidad", title: "Pulso — Identidad cultural", image: projectBranding, description: "Sistema visual flexible para conectar arte, música, ideas y personas en distintos formatos.", tools: "Illustrator · InDesign · After Effects" },
   { number: "03", category: "Técnico · Mixto", title: "Flow — Automatización creativa", image: projectSystems, description: "Scripts y flujos internos para reducir tareas repetitivas y convertir procesos de diseño en sistemas fiables.", tools: "Python · Bash · Git · Linux" },
 ];
@@ -65,7 +65,7 @@ function Index() {
       <section id="inicio" className="relative flex min-h-[calc(100svh-2rem)] flex-col justify-center overflow-hidden px-5 pb-9 pt-24 md:min-h-[92svh] md:px-10 md:pb-12 md:pt-28 lg:px-16">
         <div className="mx-auto w-full max-w-[1440px]">
           <div className="mb-7 flex items-end justify-between border-b border-foreground/20 pb-3 text-[10px] font-semibold uppercase tracking-[0.2em] md:text-xs">
-            <span>Diseñador gráfico · ASIR</span><span>Madrid · 2026</span>
+            <span>Diseñador gráfico · ASIR</span><span>Alicante · 2026</span>
           </div>
           <p className="mb-2 flex items-center gap-2 text-sm font-medium text-primary md:text-lg"><span className="size-2 rounded-full bg-secondary" />¡Hola! Soy David</p>
           <h1 className="text-balance font-display text-[3.35rem] leading-[0.78] text-primary md:text-[clamp(4rem,12vw,11rem)]">
