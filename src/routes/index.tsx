@@ -50,6 +50,7 @@ function Index() {
   }, []);
 
   return (
+    <> 
     <CustomCursor />
     <main className="bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-foreground/10 bg-background/90 px-5 backdrop-blur-md md:px-10">
@@ -135,5 +136,6 @@ function Index() {
         </div>
       </footer>
     </main>
+    </> 
   );
 }
