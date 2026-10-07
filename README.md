@@ -1,9 +1,3 @@
-# Synergy Studio
-
-https://nivedhanirmal.com/ 1. Hero/Sobre Mí (Equivalente a "About")
-
-Objetivo: Presentar tu híbrida profesional en 3 segundos.
-
 👋 ¡Hola! Soy David
 
 Diseñador Gráfico desde 2020 (6 años en agencias y estudios)
