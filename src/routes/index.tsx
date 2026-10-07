@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ArrowUpRight, Asterisk, Circle } from "lucide-react";
 import { useEffect } from "react";
-
 import portrait from "@/assets/david-portrait.jpg";
 import projectBranding from "@/assets/project-branding.jpg";
 import projectShopify from "@/assets/project-shopify.jpg";
