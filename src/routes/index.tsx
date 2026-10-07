@@ -7,6 +7,8 @@ import projectBranding from "@/assets/project-branding.jpg";
 import projectShopify from "@/assets/project-shopify.jpg";
 import projectSystems from "@/assets/project-systems.jpg";
 import { Button } from "@/components/ui/button";
+import { CustomCursor } from '@/components/CustomCursor';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,6 +50,7 @@ function Index() {
   }, []);
 
   return (
+    <CustomCursor />
     <main className="bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-foreground/10 bg-background/90 px-5 backdrop-blur-md md:px-10">
         <a href="#inicio" className="font-display text-3xl text-primary" aria-label="David Blanes, inicio">DB<span className="text-secondary">.</span></a>
