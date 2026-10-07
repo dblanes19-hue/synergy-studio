@@ -7,6 +7,14 @@
 /* ============================================
    FUENTES PERSONALIZADAS - TOMATO GROTESK
    ============================================ */
+PPNeueMachina-InktrapLight.ttf
+@font-face {
+  font-family: 'PPNeueuMachina';
+  src: url('/fonts/PPNeueMachina-InktrapLight.ttf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Tomato Grotesk';
@@ -33,64 +41,64 @@
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-extralight-slanted.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-extralight-slanted.otf') format('opentype');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-semibold.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-semibold-slanted.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-semibold-slanted.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-extrabold.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-extrabold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-extrabold-slanted.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-extrabold-slanted.otf') format('opentype');
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-bold.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-bold-slanted.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-bold-slanted.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('/fonts/tomato-grotesk-black.otf') format('opentype');
+  font-family: ' Grotesk';
+  src: url('/fonts/-grotesk-black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -131,7 +139,7 @@
  */
 
 @theme inline {
-  --font-sans: "Tomato Grotesk", sans-serif;
+  --font-sans: "PPNeueuMachina", sans-serif;
   --font-display: "Tomato Grotesk";
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
