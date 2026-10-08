@@ -12,6 +12,25 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { SmoothScroll } from "@/components/ui/SmoothScroll";
+
+// ... dentro de head: () => ({ ... })
+links: [
+  { rel: "stylesheet", href: "/fonts.css" },
+  { rel: "stylesheet", href: appCss },
+  { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+],
+// ❌ elimina los preconnect a fonts.googleapis/gstatic y el stylesheet de DM+Serif+Manrope
+
+function RootComponent() {
+  const { queryClient } = Route.useRouteContext();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <SmoothScroll />
+      <Outlet />
+    </QueryClientProvider>
+  );
+}
 
 function NotFoundComponent() {
   return (
