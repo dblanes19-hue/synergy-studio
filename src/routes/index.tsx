@@ -6,6 +6,7 @@ import projectBranding from "@/assets/project-branding.jpg";
 import projectShopify from "@/assets/project-shopify.jpg";
 import projectSystems from "@/assets/project-systems.jpg";
 import { Button } from "@/components/ui/button";
+
 import { CustomCursor } from '@/components/ui/CustomCursor';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 
