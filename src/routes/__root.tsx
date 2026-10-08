@@ -14,24 +14,6 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 
-// ... dentro de head: () => ({ ... })
-links: [
-  { rel: "stylesheet", href: "/fonts.css" },
-  { rel: "stylesheet", href: appCss },
-  { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-],
-// ❌ elimina los preconnect a fonts.googleapis/gstatic y el stylesheet de DM+Serif+Manrope
-
-function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
-  return (
-    <QueryClientProvider client={queryClient}>
-      <SmoothScroll />
-      <Outlet />
-    </QueryClientProvider>
-  );
-}
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -106,17 +88,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: "/fonts.css",
-      },
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" },
+      { rel: "stylesheet", href: "/fonts.css" },
+      { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
@@ -145,7 +118,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <SmoothScroll />
       <Outlet />
     </QueryClientProvider>
   );
