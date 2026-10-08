@@ -14,29 +14,20 @@ export function ScrollReveal({ children, className = '', delay = 0 }: ScrollReve
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            setIsVisible(true);
-          }, delay);
+          setTimeout(() => setIsVisible(true), delay);
         }
       },
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
   }, [delay]);
 
   return (
     <div
       ref={ref}
-      className={`${className} ${isVisible ? 'visible' : ''}`}
+      className={className}
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
