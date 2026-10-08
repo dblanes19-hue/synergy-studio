@@ -35,10 +35,7 @@ export function CustomCursor() {
   return (
     <div
       className={`custom-cursor ${isHovering ? 'hover' : ''}`}
-      style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-      }}
+      style={{ left: `${position.x}px`, top: `${position.y}px` }}
     />
   );
 }
