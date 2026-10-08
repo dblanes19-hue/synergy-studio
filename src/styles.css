@@ -182,10 +182,12 @@
   height: 44px;
 }
 
-@media (hover: none) {
+/*@media (hover: none) {
   .custom-cursor { display: none; }
+}*/
+@media (hover: hover) and (pointer: fine) {
+  * { cursor: none !important; }
 }
-
 /* ============================================
    LENIS (scroll suave con inercia)
    ============================================ */
